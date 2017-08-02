@@ -10,7 +10,7 @@ let connect = (mapStateToProps,mapDispatchToProps) => OldComponent => {
       super();
     }
     componentDidMount(){
-      this.setState(mapStateToProps(this.context.store.getState()));
+      this.State(mapStateToProps(this.context.store.getState()));
       this.unsubscribe = this.context.store.subscribe(()=>{
         this.setState(mapStateToProps(this.context.store.getState()));
       });
